@@ -8,14 +8,12 @@ highlighter: rouge
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Abhishek Nagekar's Blog
-tagline: Code, Science, Philosophy, Humor
+title : lx704 Blog
+tagline: 代码、分享、数据库
 author :
-  name : Abhishek Nagekar
-  email : abhishek@nagekar.com
-  github : abhn
-  twitter : abhisheknagekar
-  feedburner : AbhishekN
+  name : chenmo
+  email : lzx704@126.com
+  github : lzx704
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
