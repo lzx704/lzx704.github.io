@@ -5,8 +5,8 @@
         <description>lx704 Blog - chenmo</description>
         <link>https://www.nagekar.com</link>
         <atom:link href="https://www.nagekar.com/rss.xml" rel="self" type="application/rss+xml" />
-        <lastBuildDate>Fri, 01 Sep 2017 16:24:00 +0800</lastBuildDate>
-        <pubDate>Fri, 01 Sep 2017 16:24:00 +0800</pubDate>
+        <lastBuildDate>Fri, 01 Sep 2017 16:43:25 +0800</lastBuildDate>
+        <pubDate>Fri, 01 Sep 2017 16:43:25 +0800</pubDate>
         <ttl>60</ttl>
 
 
@@ -562,8 +562,8 @@ gem install jekyll-feed&lt;/p&gt;
 &lt;h4 id=&quot;6-jekyll增加皮肤&quot;&gt;6 Jekyll增加皮肤&lt;/h4&gt;
 
 </description>
-                <link>https://www.nagekar.com/jekyll/update/2017/08/useblog.html</link>
-                <guid>https://www.nagekar.com/jekyll/update/2017/08/useblog</guid>
+                <link>https://www.nagekar.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF/2017/08/useblog.html</link>
+                <guid>https://www.nagekar.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF/2017/08/useblog</guid>
                 <pubDate>Tue, 29 Aug 2017 16:57:01 +0800</pubDate>
         </item>
 

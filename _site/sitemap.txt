@@ -8,5 +8,5 @@ https://www.nagekar.com/sitemap.txt
 https://www.nagekar.com/tags
 https://www.nagekar.com/feed.xml
 
-https://www.nagekar.com/jekyll/update/2017/08/useblog.html
+https://www.nagekar.com/%E6%95%B0%E6%8D%AE%E5%BA%93%E6%8A%80%E6%9C%AF/2017/08/useblog.html
 https://www.nagekar.com/2017/04/Lorem-Ipsum.html
