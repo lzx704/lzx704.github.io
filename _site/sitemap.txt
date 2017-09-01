@@ -1,0 +1,12 @@
+
+https://www.nagekar.com/404
+https://www.nagekar.com/archive
+https://www.nagekar.com/atom.xml
+https://www.nagekar.com/
+https://www.nagekar.com/rss.xml
+https://www.nagekar.com/sitemap.txt
+https://www.nagekar.com/tags
+https://www.nagekar.com/feed.xml
+
+https://www.nagekar.com/jekyll/update/2017/08/useblog.html
+https://www.nagekar.com/2017/04/Lorem-Ipsum.html

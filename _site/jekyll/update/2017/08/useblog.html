@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <link rel="stylesheet" href="/assets/css/normalize.css"/>
+  <link rel="stylesheet" href="/assets/css/bulma.css"/>
+  <link rel="stylesheet" href="/assets/css/custom.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/assets/images/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <title>
+    
+      Welcome to Jekyll! &middot; lx704 Blog
+    
+  </title>
+
+</head>
+
+
+<body>
+
+<section class="hero is-dark">
+  <div class="hero-body">
+    <div class="container">
+        <h1 class="title">
+          <span class="typewrite" data-period="2000" data-type='[ "hello", "namaste", "assalam o alaikum",
+          "sat srī akāl", "khammaghani", "hola", "bonjour", "nomoskaar", "guten tag", "kumusta", "salut", "nômoshkar"]'>
+            <span class="wrap"></span>
+          </span>
+        </h1>
+      <h4 class="subtitle" id="quote">
+      </h4>
+    </div>
+  </div>
+</section>
+
+<div class="main-container">
+  <div class="tile is-ancestor is-vertical">
+
+
+    <nav class="nav has-shadow">
+
+      <div class="nav-left">
+
+        <a href="/" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-home" aria-hidden="true" title="Homepage"></i>
+          </span>
+        </a>
+
+        <a href="https://github.com/abhn" class="nav-item">
+          <span class="icon">
+            <i class="fa fa-github" aria-hidden="true" title="Github"></i>
+          </span>
+        </a>
+
+        <div class="nav-item" id="searchFieldNav">
+          <div class="field has-addons">
+            <p class="control">
+              <input class="input is-small" type="text" placeholder="Find an article" id="search-text">
+            </p>
+            <p class="control">
+              <a class="button is-dark is-small" onclick="searchHandler();">
+                Search
+              </a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="nav-right nav-menu" id='nav-menu'>
+        <a href="/archive" class="nav-item">Archive</a>
+        <a href="/tags" class="nav-item">Tags</a>
+      </div>
+
+      <span class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+    </nav>
+
+    <div class="tile is-parent">
+      <div class="tile is-8 is-child main">
+
+        <div class="box">
+    <h1 class="post-title">Welcome to Jekyll!</h1>
+    <span class="post-meta">29 August, 2017. It was a Tuesday. <a style="color:grey" href="#disqus_thread"></a></span><hr/>
+
+    <span class="post-text"><h1 id="github博客如何使用">Github博客如何使用</h1>
+
+<ul>
+  <li>网页地址</li>
+</ul>
+
+<p><a href="https://pages.github.com/">申请网站地址</a></p>
+
+<ul>
+  <li>参考网站</li>
+</ul>
+
+<p>https://woaielf.github.io/</p>
+
+<p>http://www.jianshu.com/p/1260517bbedb</p>
+
+<p>如何设置Jekyll主题
+https://webdesign.tutsplus.com/tutorials/how-to-set-up-a-jekyll-theme–cms-26332</p>
+
+<p>详细参考如下网址，已有详细步骤
+https://pages.github.com/</p>
+
+<p>主题地址
+https://github.com/pages-themes/cayman/blob/master/README.md#usage</p>
+
+<p>主题仓库
+https://startbootstrap.com/template-overviews/clean-blog/</p>
+
+<p>不错的例子</p>
+
+<blockquote>
+  <p>博客名称  ：lzx704/蓝海无涯</p>
+</blockquote>
+
+<!---->
+
+<blockquote>
+  <p>目标</p>
+</blockquote>
+
+<p>有最近上传，文章分类
+文档大纲</p>
+
+<h3 id="组织站点">组织站点</h3>
+<h4 id="1-注册网站使用客户端">1 注册网站/使用客户端</h4>
+<p>我们使用的是MAC,
+<a href="https://desktop.github.com/">下载地址</a></p>
+
+<p><a href="https://github.com/">官网访问网址(需要翻墙)</a></p>
+
+<h4 id="2-创建lzx704githubio储存库">2 创建lzx704.github.io储存库</h4>
+
+<h4 id="3-同步到desktop">3 同步到Desktop</h4>
+<p>https://github.com/lzx704/lzx704.github.io
+<img src="http://ovblf5i76.bkt.clouddn.com/2017-08-28-屏幕快照 2017-08-28 上午8.38.12.png" alt="点击图片即可" /></p>
+
+<h4 id="4-创建indexhtml-并同步">4 创建index.html 并同步</h4>
+<p>内容如下
+<code class="highlighter-rouge">&lt;h1&gt;hello&lt;/h1&gt;</code></p>
+
+<h4 id="5-打开网站">5 打开网站</h4>
+<p>Fire up a browser and go to https://username.github.io.</p>
+
+<h3 id="选择主题">选择主题</h3>
+<h4 id="选择设置">选择设置</h4>
+<p>settings</p>
+
+<h4 id="选择主题-1">选择主题</h4>
+<ul>
+  <li>
+    <p>Scroll down to the GitHub Pages section. Press Choose a theme.</p>
+  </li>
+  <li>
+    <p>Choose one of the themes from the carousel at the top. 
+When you’re done, click Select theme on the right.</p>
+  </li>
+</ul>
+
+<h4 id="自动转到文件编辑">自动转到文件编辑</h4>
+<p>Edit content</p>
+
+<h3 id="新增站点">新增站点</h3>
+<h4 id="1创建新的repo">1.创建新的repo</h4>
+<p>登录到Github上，新建一个repo，命名为my-project，勾选 initialize this repository with a README，点击create repository。</p>
+
+<p><img src="media/15038404097930/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-08-28%20%E4%B8%8B%E5%8D%883.34.03.png" alt="屏幕快照 2017-08-28 下午3.34.03" /></p>
+
+<h4 id="2设置成master分支">2.设置成master分支</h4>
+<p>打开settings，有一个Github Pages 的设置，点击 source 中的本来的 None ，使其变成 master 分支，也就是作为部署github pages 的分支，然后点击 save。</p>
+
+<h4 id="3创建indexhtml">3.创建index.html</h4>
+<p><code class="highlighter-rouge">&lt;h1&gt;hello&lt;/h1&gt;</code></p>
+
+<h4 id="4打开新的页面">4.打开新的页面</h4>
+<p>https://lzx704.github.io/my-project/</p>
+
+<h2 id="blogging-with-jekyll">Blogging with Jekyll</h2>
+
+<blockquote>
+  <p>视频教程，比官方简单,这个是系列教程
+<a href="https://www.youtube.com/watch?v=IINPHVVrF5Q&amp;list=PLWjCJDeWfDdfVEcLGAfdJn_HXyM4Y7_k-">Jekyll视频教程</a>
+这是什么？
+<a href="https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/">Jekyll链接</a></p>
+</blockquote>
+
+<p><a href="http://jekyll.com.cn/">jekyll中文地址</a></p>
+
+<h4 id="1-升级gem">1 升级GEM</h4>
+<p>gem – RubyGems program
+是一个用于对 Ruby组件进行打包的 Ruby 打包系统</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chenmodeMacBook-Pro:lzx704.github.io chenmo$ sudo gem update --system
+
+Updating rubygems-update
+Fetching: rubygems-update-2.6.13.gem (100%)
+Successfully installed rubygems-update-2.6.13
+Parsing documentation for rubygems-update-2.6.13
+Installing ri documentation for rubygems-update-2.6.13
+Installing darkfish documentation for rubygems-update-2.6.13
+Installing RubyGems 2.6.13
+RubyGems 2.6.13 installed
+Parsing documentation for rubygems-2.6.13
+Installing ri documentation for rubygems-2.6.13
+
+=== 2.6.13 / 2017-08-27
+
+Security fixes:
+
+* Fix a DNS request hijacking vulnerability.
+  Fix by Samuel Giddins.
+* Fix an ANSI escape sequence vulnerability.
+  Fix by Evan Phoenix.
+* Fix a DOS vulernerability in the `query` command.
+  Fix by Samuel Giddins.
+* Fix a vulnerability in the gem installer that allowed
+  a malicious gem to overwrite arbitrary files.
+  Fix by Samuel Giddins.
+...
+省略很多版本更新
+------------------------------------------------------------------------------
+
+RubyGems installed the following executables:
+	/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/gem
+
+Ruby Interactive (ri) documentation was installed. ri is kind of like man 
+pages for ruby libraries. You may access it like this:
+  ri Classname
+  ri Classname.class_method
+  ri Classname#instance_method
+If you do not wish to install this documentation in the future, use the
+--no-document flag, or set it as the default in your ~/.gemrc file. See
+'gem help env' for details.
+
+RubyGems system software updated
+</code></pre>
+</div>
+
+<p>备注：
+rvm是装各种版本ruby的，是个ruby版本管理器；
+bundle是rails框架里面安装Gemfile指定的各种库的工具。 
+gem和bundle是装的同样的东西，rvm是装ruby的</p>
+
+<h4 id="2-安装ruby安装rvm">2 安装ruby,安装rvm</h4>
+<p>curl -L get.rvm.io | bash -s stable</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   194  100   194    0     0    261      0 --:--:-- --:--:-- --:--:--   261
+100 24038  100 24038    0     0  10962      0  0:00:02  0:00:02 --:--:-- 33912
+
+Downloading https://github.com/rvm/rvm/archive/1.29.2.tar.gz
+Downloading https://github.com/rvm/rvm/releases/download/1.29.2/1.29.2.tar.gz.asc
+curl: (28) Connection timed out after 30001 milliseconds
+
+Could not download 'https://github.com/rvm/rvm/releases/download/1.29.2/1.29.2.tar.gz.asc'.
+  curl returned status '28'.
+
+
+Installing RVM to /Users/chenmo/.rvm/
+    Adding rvm PATH line to /Users/chenmo/.profile /Users/chenmo/.mkshrc /Users/chenmo/.bashrc /Users/chenmo/.zshrc.
+    Adding rvm loading line to /Users/chenmo/.profile /Users/chenmo/.bash_profile /Users/chenmo/.zlogin.
+Installation of RVM in /Users/chenmo/.rvm/ is almost complete:
+
+  * To start using RVM you need to run `source /Users/chenmo/.rvm/scripts/rvm`
+    in all your open shell windows, in rare cases you need to reopen all shell windows.
+
+# lzx704,
+#
+#   Thank you for using RVM!
+#   We sincerely hope that RVM helps to make your life easier and more enjoyable!!!
+#
+# ~Wayne, Michal &amp; team.
+
+In case of problems: https://rvm.io/help and https://twitter.com/rvm_io
+
+  * WARNING: You have '~/.profile' file, you might want to load it,
+    to do that add the following line to '/Users/chenmo/.bash_profile':
+
+      source ~/.profile
+
+chenmodeMacBook-Pro:~ chenmo$ 
+</code></pre>
+</div>
+
+<p>测试是否安装正常
+<code class="highlighter-rouge">$ rvm -v</code></p>
+
+<p>设置默认的版本
+<code class="highlighter-rouge">rvm 2.4.0 --default</code></p>
+
+<h4 id="3-安装ruby">3 安装ruby</h4>
+<p>列出已知ruby的版本
+<code class="highlighter-rouge">$ rvm list known</code>
+安装
+<code class="highlighter-rouge">$ rvm install 2.4.0</code></p>
+
+<p><strong>由于GEM源在国外，经常访问出现问题，可以用国内镜像替代。</strong>
+<a href="https://gems.ruby-china.org/">参考网站</a></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chenmodeMacBook-Pro:lzx704.github.io chenmo$ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
+https://gems.ruby-china.org/ added to sources
+https://rubygems.org/ removed from sources
+chenmodeMacBook-Pro:lzx704.github.io chenmo$ gem sources -l
+*** CURRENT SOURCES ***
+
+https://gems.ruby-china.org/
+
+</code></pre>
+</div>
+
+<h4 id="4-安装jekyll">4 安装Jekyll</h4>
+
+<ul>
+  <li>Install Jekyll and Bundler gems through RubyGems</li>
+</ul>
+
+<p>sudo gem install jekyll bundler</p>
+
+<ul>
+  <li>
+    <p>Create a new Jekyll site at ./myblog
+~ $ jekyll new myblog</p>
+  </li>
+  <li>
+    <p>Change into your new directory
+~ $ cd myblog</p>
+  </li>
+  <li>
+    <p>Build the site on the preview server
+~/myblog $ bundle exec jekyll serve</p>
+  </li>
+  <li>
+    <p>Now browse to http://localhost:4000</p>
+  </li>
+</ul>
+
+<p>安装jekyll
+cd /Users/chenmo/Documents/GitHub/lzx704.github.io</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>gem install jekyll
+gem install bundler
+....
+Parsing documentation for jekyll-3.5.2
+Installing ri documentation for jekyll-3.5.2
+Done installing documentation for ffi, rb-inotify, sass-listen, sass, jekyll-sass-converter, listen, jekyll-watch, kramdown, liquid, mercenary, forwardable-extended, pathutil, rouge, safe_yaml, jekyll after 19 seconds
+15 gems installed
+
+</code></pre>
+</div>
+<h4 id="5-建立博客">5 建立博客</h4>
+<p>jekyll new myblog
+<a href="http://jekyll.com.cn/docs/home/">详细使用参考网站</a></p>
+
+<h4 id="安装-command-line-tools">安装 Command Line Tools</h4>
+
+<p><code class="highlighter-rouge">xcode-select --install</code></p>
+
+<p><a href="http://railsapps.github.io/xcode-command-line-tools.html">官方安装文档</a></p>
+
+<h4 id="本地jekyll用法">本地jekyll用法</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>bogon:myblog chenmo$ jekyll build
+Configuration file: /Users/chenmo/Documents/GitHub/myblog/_config.yml
+            Source: /Users/chenmo/Documents/GitHub/myblog
+       Destination: /Users/chenmo/Documents/GitHub/myblog/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.426 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.
+bogon:myblog chenmo$ ls
+404.html	Gemfile.lock	_config.yml	_site		index.md
+Gemfile		README.md	_posts		about.md
+bogon:myblog chenmo$ jekyll serve
+Configuration file: /Users/chenmo/Documents/GitHub/myblog/_config.yml
+            Source: /Users/chenmo/Documents/GitHub/myblog
+       Destination: /Users/chenmo/Documents/GitHub/myblog/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 0.281 seconds.
+ Auto-regeneration: enabled for '/Users/chenmo/Documents/GitHub/myblog'
+    Server address: http://127.0.0.1:4000/
+  Server running... press ctrl-c to stop.
+</code></pre>
+</div>
+
+<p>有报错，一些依赖包未安装，看问题4即可</p>
+
+<h2 id="设置主题">设置主题</h2>
+
+<h4 id="gem添加主题">gem添加主题</h4>
+
+<ul>
+  <li>
+    <p>在网站目录下，下载主题，先去网站查看是否有这主题
+bundle gem jekyll-theme-cayman</p>
+  </li>
+  <li>
+    <p>将主题名称放入Gemfile
+gem jekyll-theme-midnight
+gem “jekyll-theme-awesome”</p>
+  </li>
+  <li>
+    <p>在网站目录下执行
+bundle install
+需要一点时间</p>
+  </li>
+  <li>
+    <p>在_config.yml配置文件增加主题，如下，激活这个主题
+theme: jekyll-theme-awesome</p>
+  </li>
+</ul>
+
+<p>4 启动主题
+bundle exec jekyll serve</p>
+
+<p>参考网站
+https://jekyllrb.com/docs/themes/#overriding-theme-defaults</p>
+
+<p>主题获取地址
+https://rubygems.org/search?utf8=%E2%9C%93&amp;query=jekyll-theme</p>
+
+<p>bundle gem jekyll-theme-cayman</p>
+
+<p>Open Gemfile and remove gem “minima”, “~&gt; 2.0”.
+Open _config.yml and remove theme: minima.</p>
+
+<h4 id="问题">问题</h4>
+<ul>
+  <li>BUDNLE安装
+chenmodeMacBook-Pro:myblog chenmo$ bundle install
+The dependency tzinfo-data (&gt;= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run <code class="highlighter-rouge">bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java</code>.</li>
+</ul>
+
+<p>gem install tzinfo-data
+Fetching: tzinfo-data-1.2017.2.gem (100%)
+Successfully installed tzinfo-data-1.2017.2
+Parsing documentation for tzinfo-data-1.2017.2
+Installing ri documentation for tzinfo-data-1.2017.2
+Done installing documentation for tzinfo-data after 0 seconds
+1 gem installed</p>
+
+<p>执行</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chenmodeMacBook-Pro:myblog chenmo$ bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java
+
+Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Resolving dependencies...
+Writing lockfile to /Users/chenmo/Documents/GitHub/myblog/Gemfile.lock
+chenmodeMacBook-Pro:myblog chenmo$ 
+chenmodeMacBook-Pro:myblog chenmo$ bundle install
+
+Fetching gem metadata from https://rubygems.org/............
+Fetching version metadata from https://rubygems.org/...
+Fetching dependency metadata from https://rubygems.org/..
+Using public_suffix 3.0.0
+Using bundler 1.15.4
+Using colorator 1.1.0
+Using ffi 1.9.18
+Using forwardable-extended 2.6.0
+Using rb-fsevent 0.10.2
+Using kramdown 1.14.0
+Using liquid 4.0.0
+Using mercenary 0.3.6
+Using rouge 1.11.1
+Using safe_yaml 1.0.4
+Using addressable 2.5.2
+Using rb-inotify 0.9.10
+Using pathutil 0.14.0
+Using sass-listen 4.0.0
+Using listen 3.0.8
+Using sass 3.5.1
+Using jekyll-watch 1.5.0
+Using jekyll-sass-converter 1.5.0
+Using jekyll 3.5.2
+Using jekyll-feed 0.9.2
+Fetching jekyll-seo-tag 2.3.0
+Installing jekyll-seo-tag 2.3.0
+Fetching jekyll-theme-cayman 0.1.0
+Installing jekyll-theme-cayman 0.1.0
+Bundle complete! 4 Gemfile dependencies, 23 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+</code></pre>
+</div>
+
+<p>安装
+gem install jekyll-theme-cayman</p>
+
+<p>查看安装目录
+bundle show jekyll-theme-cayman</p>
+
+<p>cp -r * /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/jekyll-theme-cayman-0.1.0</p>
+
+<h3 id="主题研究">主题研究</h3>
+<h4 id="几个配置文件">几个配置文件</h4>
+
+<ul>
+  <li>Gemfile</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>source 'https://rubygems.org'
+gemspec
+
+</code></pre>
+</div>
+<ul>
+  <li>_config.yml</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>theme: jekyll-theme-cayman
+</code></pre>
+</div>
+<ul>
+  <li>几个主题目录
+    <ul>
+      <li>_layouts</li>
+      <li>_includes</li>
+      <li>_sass</li>
+      <li>assets</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="一些常用命令">一些常用命令</h2>
+<h3 id="git">git</h3>
+
+<p>上传文件变动
+git push origin master</p>
+
+<p>1.保留你本地的修改</p>
+
+<p>git merge –abort</p>
+
+<p>git reset –merge</p>
+
+<p>合并后记得一定要提交这个本地的合并</p>
+
+<p>然后在获取线上仓库</p>
+
+<p>git pull</p>
+
+<h3 id="bundle">bundle</h3>
+
+<ul>
+  <li>
+    <p>本地启动服务
+bundle exec jekyll serve</p>
+  </li>
+  <li>
+    <p>安装下BUDNLE相关的主题等信息
+bundle install</p>
+  </li>
+</ul>
+
+<h3 id="gem">gem</h3>
+
+<h2 id="custom-urls">Custom URLs</h2>
+<h2 id="问题-1">问题</h2>
+<h4 id="1-git-push--u-origin-master-连不上">1 git push -u origin master 连不上</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chenmodeMacBook-Pro:lzx704.github.io chenmo$ git push -u origin master
+fatal: unable to access 'https://github.com/lzx704/lzx704.github.io.git/': Failed to connect to github.com port 443: Operation timed out
+
+</code></pre>
+</div>
+
+<p>解决,在/etc/hosts 注释以下github.com前的IP</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>#192.30.252.129   github.com
+#192.30.252.131   github.com
+#204.13.251.16    github.com
+</code></pre>
+</div>
+<h4 id="2-安装jekyll-1">2 安装jekyll 1</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chenmodeMacBook-Pro:lzx704.github.io chenmo$ sudo gem install jekyll bundler
+Password:
+Fetching: public_suffix-3.0.0.gem (100%)
+ERROR:  Error installing jekyll:
+	public_suffix requires Ruby version &gt;= 2.1.
+Fetching: bundler-1.15.4.gem (100%)
+ERROR:  While executing gem ... (Errno::EPERM)
+    Operation not permitted - /usr/bin/bundle
+</code></pre>
+</div>
+
+<h4 id="3-安装jekyll报错2">3 安装jekyll报错2</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>chenmodeMacBook-Pro:lzx704.github.io chenmo$ sudo gem install jekyll
+Password:
+ERROR:  Error installing jekyll:
+	public_suffix requires Ruby version &gt;= 2.1.
+
+
+</code></pre>
+</div>
+
+<h4 id="4-jekyll执行部分命令报错">4 jekyll执行部分命令报错</h4>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>bogon:myblog chenmo$ jekyll serve
+/Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/resolver.rb:396:in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'minima (~&gt; 2.0)' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/resolver.rb:366:in `each'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/resolver.rb:366:in `verify_gemfile_dependencies_are_found!'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/resolver.rb:212:in `start'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/resolver.rb:191:in `resolve'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/definition.rb:235:in `resolve'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/definition.rb:159:in `specs'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/definition.rb:218:in `specs_for'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/definition.rb:207:in `requested_specs'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/runtime.rb:109:in `block in definition_method'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler/runtime.rb:21:in `setup'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/bundler-1.15.4/lib/bundler.rb:101:in `setup'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/jekyll-3.5.2/lib/jekyll/plugin_manager.rb:48:in `require_from_bundler'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/gems/jekyll-3.5.2/exe/jekyll:9:in `&lt;top (required)&gt;'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/bin/jekyll:23:in `load'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/bin/jekyll:23:in `&lt;main&gt;'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/chenmo/.rvm/gems/ruby-2.4.0/bin/ruby_executable_hooks:15:in `&lt;main&gt;'
+</code></pre>
+</div>
+<p>gem ‘minima (~&gt; 2.0)
+gem install minima
+gem install jekyll-feed</p>
+
+<h4 id="5-github支持中文">5 GITHUB支持中文</h4>
+
+<h4 id="6-jekyll增加皮肤">6 Jekyll增加皮肤</h4>
+
+</span>
+</div>
+
+<!--<div class="box">-->
+    <!-- google ads code box -->
+<!--</div>-->
+
+
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+    var disqus_developer = 1;
+    var disqus_shortname = 'nagekar'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+      </div>
+
+      <div class="tile is-4 is-child">
+        <div class="tile is-parent is-vertical sidebar">
+
+          <div class="tile is-child widget">
+
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title nice-title">
+                  Recent Posts
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <ul>
+                  
+                  <li><a href="/jekyll/update/2017/08/useblog.html">
+                    Welcome to Jekyll!
+                  </a></li>
+                  
+                  <li><a href="/2017/04/Lorem-Ipsum.html">
+                    Lorem Ipsum
+                  </a></li>
+                  
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tile is-child widget">
+
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title nice-title">
+                  Sponsored
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <img src="/assets/images/Dust_Bunny.jpg"/>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tile is-child widget">
+            <div class="card">
+              <header class="card-header">
+                <p class="card-header-title nice-title">
+                  Recommended Websites
+                </p>
+              </header>
+              <div class="card-content">
+                <div class="content nice-text">
+                  <ul>
+                    <li>
+                      <a href="https://xkcd.com">xkcd</a>
+                    </li>
+                    <li>
+                      <a href="http://commitstrip.com">Commit Strip</a>
+                    </li>
+                    <li>
+                      <a href="http://www.smbc-comics.com">SMBC Comics</a>
+                    </li>
+                    <li>
+                      <a href="https://blog.codinghorror.com">Coding Horror</a>
+                    </li>
+                    <li>
+                      <a href="http://waitbutwhy.com">Wait Buy Why</a>
+                    </li>
+                    <li>
+                      <a href="https://simplysoch.wordpress.com/">Simply Soch</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Some rights reserved.
+      </p>
+      <p>
+        Made with <i class="fa fa-heart"></i> and <a href="https://github.com/jgthms/bulma">Bulma</a>, <a href="https://jekyllrb.com/">Jekyll</a>. Hosted on <a href="https://github.com/">Github</a>
+      </p>
+      <p>
+        <a class="icon" href="https://github.com/abhn">
+          <i class="fa fa-github" title="Github"></i>
+        </a>
+        <a class="icon" href="https://in.linkedin.com/in/AbhishekNagekar">
+          <i class="fa fa-linkedin" title="Linkedin"></i>
+        </a>
+        <a class="icon" href="mailto:abhishek@nagekar.com">
+          <i class="fa fa-envelope" title="Email"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- js -->
+<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/typewriter.js"></script>
+</body>
+</html>
