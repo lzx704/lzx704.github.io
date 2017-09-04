@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>python自动化运维 1（转）</title>
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/2017/08/20/Python%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%90%E7%BB%B4/">
+    <link rel="alternate" type="application/rss+xml" title="lzx704 | 蓝坠星" href="http://localhost:4000/feed.xml ">
+
+
+    <script>
+    // 百度统计代码
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?83f647f093ed5f2878baebb58c207384";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">lzx704 | 蓝坠星</a>
+        <small>大数据 & 科学</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>python自动化运维 1（转）</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-08-20
+            </div>
+
+            <div class="label-card">
+                <i class="fa fa-user"></i>cm
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#开发" title="Category: 开发" rel="category">开发</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#%E5%BC%80%E5%8F%91" title="Tag: 开发" rel="tag">开发</a-->
+        <a href="/tag/#开发" title="Tag: 开发" rel="tag">开发</a>&nbsp;
+    
+        <!--a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a-->
+        <a href="/tag/#Python" title="Tag: Python" rel="tag">Python</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#python自动化运维" id="markdown-toc-python自动化运维">Python自动化运维</a>    <ul>
+      <li><a href="#python简介" id="markdown-toc-python简介">Python简介</a></li>
+      <li><a href="#为什么选择python" id="markdown-toc-为什么选择python">为什么选择Python</a></li>
+      <li><a href="#1python入门" id="markdown-toc-1python入门">1、Python入门　</a>        <ul>
+          <li><a href="#一python-2x-vs-3x区别" id="markdown-toc-一python-2x-vs-3x区别">一、Python 2.x vs 3.x区别</a></li>
+          <li><a href="#二安装python" id="markdown-toc-二安装python">二、安装Python</a></li>
+          <li><a href="#三编写helloworld" id="markdown-toc-三编写helloworld">三、编写Hello，World</a></li>
+          <li><a href="#四变量字符编码" id="markdown-toc-四变量字符编码">四、变量&amp;字符编码</a>            <ul>
+              <li><a href="#变量" id="markdown-toc-变量"><strong>变量</strong></a></li>
+              <li><a href="#字符编码" id="markdown-toc-字符编码">字符编码</a></li>
+            </ul>
+          </li>
+          <li><a href="#五输入输出注释" id="markdown-toc-五输入输出注释">五、输入、输出、注释</a>            <ul>
+              <li><a href="#python输入" id="markdown-toc-python输入">Python输入：</a></li>
+              <li><a href="#python输出" id="markdown-toc-python输出">Python输出：</a></li>
+              <li><a href="#注释" id="markdown-toc-注释">注释</a></li>
+            </ul>
+          </li>
+          <li><a href="#六模块初识" id="markdown-toc-六模块初识">六、模块初识　　</a></li>
+          <li><a href="#七if语句与流程控制" id="markdown-toc-七if语句与流程控制">七、If语句与流程控制</a>            <ul>
+              <li><a href="#python的比较操作" id="markdown-toc-python的比较操作">python的比较操作：</a></li>
+              <li><a href="#如何实现比较操作" id="markdown-toc-如何实现比较操作">如何实现比较操作：</a></li>
+              <li><a href="#组合条件测试" id="markdown-toc-组合条件测试">组合条件测试：</a></li>
+              <li><a href="#if测试的语法结构" id="markdown-toc-if测试的语法结构">if测试的语法结构：</a></li>
+              <li><a href="#ifelse三元表达式" id="markdown-toc-ifelse三元表达式">if/else三元表达式：</a></li>
+            </ul>
+          </li>
+          <li><a href="#八循环forwhile" id="markdown-toc-八循环forwhile">八、循环for,while</a>            <ul>
+              <li><a href="#while循环" id="markdown-toc-while循环">while循环：</a></li>
+              <li><a href="#for循环" id="markdown-toc-for循环">for循环：</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="python自动化运维">Python自动化运维</h1>
+
+<p><a href="http://www.cnblogs.com/xiaozhiqi/p/5727727.html">本书来源网址</a></p>
+
+<h3 id="python简介">Python简介</h3>
+
+<p>　　python是吉多·范罗苏姆发明的一种面向对象的脚本语言，可能有些人不知道面向对象和脚本具体是什么意思，但是对于一个初学者来说，现在并不需要明白。大家都知道，当下全栈工程师的概念很火，而Python是一种全栈的开发语言，所以你如果能学好Python，那么前端，后端，测试，大数据分析，爬虫等这些工作你都能胜任。</p>
+
+<h3 id="为什么选择python">为什么选择Python</h3>
+<p>　　关于语言的选择，有各种各样的讨论，在这里我不多说，就引用Python里面的一个彩蛋来说明为什么要选择Python，在Python解释器里输入import this 就可以看到。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; import this
+The Zen of Python, by Tim Peters
+ 
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+</code></pre>
+</div>
+
+<p>　　上面的话简单的总结来说就是“优雅”、“明确”、“简单”，或许你还是有些不明白，举个简单的例子，若果同样的功能你用C/C++写可能要写100行代码，而如果用Python写你可能只要20行代码就搞定，同样的如果一个问题有好几种解决方案，但是Python会用一种最简单的方法来实现。所以Python是用最简单最优雅最明确的方法来解决问题。</p>
+
+<h2 id="1python入门">1、Python入门　</h2>
+<h3 id="一python-2x-vs-3x区别">一、Python 2.x vs 3.x区别</h3>
+<p>1.print在python2.x是语句,在python3.x是print()函数</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>Old: print "The answer is", 2*2
+New: print("The answer is", 2*2)
+Old: print x, # Trailing comma suppresses newline
+New: print(x, end=" ") # Appends a space instead of a newline
+Old: print # Prints a newline
+New: print() # You must call the function!
+Old: print &gt;&gt;sys.stderr, "fatal error"
+New: print("fatal error", file=sys.stderr)
+Old: print (x, y) # prints repr((x, y))
+New: print((x, y)) # Not the same as print(x, y)!
+</code></pre>
+</div>
+
+<p>2.python3.x全部字符集都是unicode,而在python2.x中是ascii编码,需要设置#-<em>- coding:utf-8 -</em>-,中文才不会乱码</p>
+
+<p>3.python2.x一些库名在python3.x的更改</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>python2.x</th>
+      <th>_winreg</th>
+      <th>ConfigParser</th>
+      <th>copy_reg</th>
+      <th>Queue</th>
+      <th>SocketServer</th>
+      <th>markupbase</th>
+      <th>repr</th>
+      <th>test.test_support</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>python2.x</td>
+      <td>_winreg</td>
+      <td>ConfigParser</td>
+      <td>copy_reg</td>
+      <td>queue</td>
+      <td>SocketServer</td>
+      <td>markupbase</td>
+      <td>repr</td>
+      <td>test.test_support</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>4.python3.x有一些第三方模块支持不了,当然还有其他的模块,后续慢慢添加….</p>
+
+<p>Twisted  urllib2  scrapy MySQLdb</p>
+
+<p>5.python2.x与python3.x库方法的不同,在后续慢慢体现….</p>
+
+<h3 id="二安装python">二、安装Python</h3>
+
+<p>　　在这里我我推荐安装Python3，因为随着时间的推移Python3，必定是未来的趋势，我们要顺应潮流。在Python的官网可以下载相应的版本，网址是https://www.python.org/downloads/，安装上面的提示安装好即可，就不在多说了，此外后面的操作都是基于Ubuntu 15.10下Python3.5.1操作，默认是Python2.7.10版本</p>
+
+<p>　　建议使用<strong>pyenv</strong>(Python版本控制2.7和3.5之间随意切换)、<strong>virtualenv</strong>(Python虚拟环境)、<strong>pycharm</strong>(Python的IDE工具)、<strong>pip</strong>(Python包管理工具)。</p>
+
+<p>windows</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1、下载安装包
+    https://www.python.org/downloads/
+2、安装python2.7.11
+    默认安装路径：C:\python27
+3、配置环境变量
+    【右键计算机】--》【属性】--》【高级系统设置】--》【高级】--》【环境变量】--》【在第二个内容框中找到 变量名为Path 的一行，双击】 --&gt; 【Python安装目录追加到变值值中，用 ； 分割】
+    如：原来的值;C:\python27，切记前面有分号
+4、安装python3.5.1
+    默认安装路径: C:\python35
+5、将python3.5中的执行程序python.exe重命名成python3
+6、配置环境变量
+    【右键计算机】--》【属性】--》【高级系统设置】--》【高级】--》【环境变量】--》【在第二个内容框中找到 变量名为Path 的一行，双击】 --&gt; 【Python安装目录追加到变值值中，用 ； 分割】
+     如：原来的值;C:\python35，切记前面有分号
+7、这样就实现python2.7和python3.5多版本
+</code></pre>
+</div>
+
+<h3 id="三编写helloworld">三、编写Hello，World</h3>
+<p>　　两种方式输出Hello World，第一种我们用解释器交互式环境，打开shell输入python。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ python
+Python 3.5.1 (default, Jul 27 2016, 18:07:46)
+[GCC 5.2.1 20151010] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; print("Hello World!")
+Hello World!
+tomcat@node:~$ python
+Python 3.5.1 (default, Jul 27 2016, 18:07:46)
+[GCC 5.2.1 20151010] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+&gt;&gt;&gt; print("Hello World!")
+Hello World!
+</code></pre>
+</div>
+<p>　　
+　　第二种将代码保存在 .py文件中，命令行下执行 python1.py 就可以打印出来Hello World。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ vim python1.py
+#!/usr/bin/env python
+# coding:utf-8
+print("Hello World!")
+ 
+tomcat@node:~$ chmod +x python1.py
+tomcat@node:~$ python python1.py
+Hello World!
+</code></pre>
+</div>
+
+<h3 id="四变量字符编码">四、变量&amp;字符编码</h3>
+
+<h4 id="变量"><strong>变量</strong></h4>
+<p>　　常量我们约定俗成都为大写</p>
+
+<p><strong>1、变量声明：</strong></p>
+
+<ul>
+  <li>Python将所有数据存为内存对象</li>
+  <li>Python中，变量事实上是指向内存对象的引用</li>
+  <li>动态类型：在任何时刻，只要需要，某个对象引用都可以重新引用一个不同的对象（可以是不同的数据类型）内建函数type()用于返回给定数据项的数据类型</li>
+  <li>”=”用于将变量名与内存中的某个对象绑定：如果对象实现存在，就直接进行绑定；否则，则由”=”创建引用的对象,变量名也是对象存在内存，比如：name=’jerry’,name这个指针指向jerry，name=’tom’的时候，name是指针指向tom，但是jerry仍在内存中存放着，只是没有被变量名指向，到一定时候会被垃圾收集器回收，和java有点像。其中当test=’jerry’时，test和name这两个变量名指向内存的地址是一样的。id(test),id(name)，变量名是内存引用的标识或符号。</li>
+</ul>
+
+<p><strong>2、变量定义的规则：</strong></p>
+
+<ul>
+  <li>变量名只能是 字母、数字或下划线的任意组合</li>
+  <li>变量名的第一个字符不能是数字</li>
+  <li>以下关键字不能声明为变量名
+　　 [‘and’, ‘as’, ‘assert’, ‘break’, ‘class’, ‘continue’, ‘def’, ‘del’, ‘elif’, ‘else’, ‘except’, ‘exec’, ‘finally’, ‘for’, ‘from’, ‘global’, ‘if’, ‘import’, ‘in’, ‘is’, ‘lambda’, ‘not’, ‘or’, ‘pass’, ‘print’, ‘raise’,’return’, ‘try’, ‘while’, ‘with’,             ‘yield’]</li>
+</ul>
+
+<p><strong>3、变量最佳命名方式：</strong></p>
+
+<ul>
+  <li>使用下划线’_‘作为连接,如 name_variables</li>
+  <li>
+    <p>使用大小写,称为驼峰法,如 NameVariables,nameVariables
+　　<strong>注意：两种命名方式不要混用,只要你喜欢的一种即可</strong>
+　　
+<strong>4、变量命名惯例：</strong></p>
+  </li>
+  <li>以单一下划线开头的变量名(_x)不会被from module import * 语句导入</li>
+  <li>以两个下划线开头但结尾没有下划线的变量名(__x)是类的本地变量</li>
+  <li>前后有双下划线的变量名(<strong>x</strong>)是系统定义的变量名，对python解释器有特殊意义</li>
+  <li>交互式模式下，变量名”_“用于保存最后表达式的结果</li>
+</ul>
+
+<h4 id="字符编码">字符编码</h4>
+<p>1、ASCII
+　　ASCII（American Standard Code for Information Interchange，美国标准信息  交换代码）是基于拉丁字母的一套电脑编码系统，主要用于显示现代英语和其他西欧语言，其最多只能用 8 位来表示（一个字节），即：2**8 = 256-1，所以，ASCII码最多只能表示 255 个符号，python2.x解释器默认是ASCII编码。
+　　显然ASCII码无法将世界上的各种文字和符号全部表示，所以，就需要新出一种可以代表所有字符和符号的编码，即：Unicode。
+　　二进制和数字转换：128 64 32 16 8 4 2 1    比如：2表示二进制 0000 0010
+　　字符和数字转换 ： 查看ASCII码表    比如： A字母 表示数字是65，二进制是0100 0001</p>
+
+<p>2、Unicode
+　　Unicode（统一码、万国码、单一码）是一种在计算机上使用的字符编码。Unicode 是为了解决传统的字符编码方案的局限而产生的，它为每种语言中的每个字符设定了统一并且唯一的二进制编码，规定所有的字符和符号最少由 16 位来表示（2个字节），即：2 * * 16 = 65536，注：此处说的的是最少2个字节，可能更多，比如汉字就需要3个字节，python3.x解释器默认是Unicode编码。</p>
+
+<p>3、UTF-8
+　　是对Unicode编码的压缩和优化，他不再使用最少使用2个字节，而是将所有的字符和符号进行动态分类：ASCII码中的内容用1个字节保存、欧洲的字符用2个字节保存，汉字用3个字节保存…
+　　所以，python2.x解释器在加载 .py 文件中的代码时，会对内容进行编码（默认ASCII），如果是如下代码的话:
+　　报错：ascii码无法表示中文</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ vim a.py
+#!/usr/bin/env python
+print "你好！世界"&lt;br&gt;
+tomcat@node:~$ python a.py
+  File "a.py", line 2
+SyntaxError: Non-ASCII character '\xe4' in file a.py on line 2, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+</code></pre>
+</div>
+<p>改正：应该显示的告诉python解释器，用什么编码来执行源代码，即：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ vi a.py
+#!/usr/bin/env python
+# coding:utf-8
+print "你好！世界"
+ 
+tomcat@node:~$ python a.py
+你好！世界
+</code></pre>
+</div>
+<p>注意：python3.x中字符集默认为UTF-8,python2.x还是ASCII所以需要设置#coding:utf-8</p>
+
+<h3 id="五输入输出注释">五、输入、输出、注释</h3>
+<h4 id="python输入">Python输入：</h4>
+<p>Python输入：</p>
+
+<p>1、Python3.x提供了一个input()，可以让用户输入字符串。比如输入用户的名字：</p>
+
+<p>python3中格式化输出默认接收的都视为字符串,如果你获取的是要数字类型则需要另外强制转换为int()转换为数字类型才能获得数字</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; name = input("please input your name:")
+please input your name:tomcatxiao
+&gt;&gt;&gt; print("Hello " + name)
+Hello tomcatxiao
+ 
+&gt;&gt;&gt; age = input("please enter your age:")
+please enter your age:21
+&gt;&gt;&gt; type(age)
+&lt;class 'str'&gt;
+ 
+&gt;&gt;&gt; age1 = input("please enter your age:")
+&gt;&gt;&gt; age1 = int(age1)
+&gt;&gt;&gt; type(age1)
+&lt;class 'int'&gt;
+</code></pre>
+</div>
+
+<p>输入密码时，如果想要不可见，需要利用 getpass 模块中的 getpass 方法，即：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ vi b.py
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+   
+import getpass
+   
+# 将用户输入的内容赋值给 pwd变量
+pwd = getpass.getpass("请输入密码：")
+   
+# 打印输入的内容
+print(pwd)
+ 
+tomcat@node:~$ python b.py
+请输入密码：
+123
+</code></pre>
+</div>
+
+<p>注意：在pycharm IDE工具中这段代码是行不通的,在Linux命令行或者Windows cmd中是可以的</p>
+
+<p>2、Python2.x提供了一个raw_input()和input(),input()在python2中基本不用忘了吧,当然我这里会演示他们的区别</p>
+
+<p>raw_input()在字符串和数值型都没有问题</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; name = raw_input("please enter your name:")
+please enter your name:tomcatxiao
+&gt;&gt;&gt; print name
+tomcatxiao
+ 
+&gt;&gt;&gt; age = raw_input("your age is:")
+your age is:21
+&gt;&gt;&gt; print age
+21
+</code></pre>
+</div>
+
+<p>input()在输入字符串的时候报错,变量未定义,数值型则没有报错,如果是字符串则需要引号’’ or ““，或者事先定义变量赋值</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; name = input("please input your name:")
+please input your name:tomcatxiao
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "&lt;string&gt;", line 1, in &lt;module&gt;
+NameError: name 'tomcatxiao' is not defined
+
+&gt;&gt;&gt; age = input("your age is:")
+your age is:21
+</code></pre>
+</div>
+
+<p>对于上面的代码进行修改下,将字符串事先赋值给一个变量,然后从input中输入则没有报错</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; myname = "tomcatxiao"
+&gt;&gt;&gt; name = input("please input your name:")
+please input your name:myname
+
+&gt;&gt;&gt; print name
+tomcatxiao
+
+</code></pre>
+</div>
+
+<h4 id="python输出">Python输出：</h4>
+<p>Python中输出是用print,Python2.x中print是语句,Python3.x中则是print()函数　　</p>
+
+<p>1.Python2.x</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>print "String %format1 %format2 ..." %(variable1,variable2)
+</code></pre>
+</div>
+<p>2.Python3.x</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>print("String %format1 %format2 ...." %(variable1,variable2))
+</code></pre>
+</div>
+
+<p>3.拼接效率比较低</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>print  "String"  + variable1
+print("String"  + variable1)
+</code></pre>
+</div>
+<p>input()和格式化输出时要特别要注意input()输入是个数字需要int()转换,格式化输出的时候使用%d才不会报错</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ vi c.py
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+ 
+name = input("input your name:")
+age = input("input your age:")
+job = input("input your job:")
+ 
+msg = '''
+Information of %s
+-------------
+Name: %s
+Age : %s
+Job : %s
+''' %(name,name,age,job)
+ 
+print(msg)
+ 
+ 
+tomcat@node:~$ python c.py
+</code></pre>
+</div>
+
+<p>注意：python3中格式化输出默认接收的都视为字符串,如果是数字则需要另外强制转换为int()转换为数字类型</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding:utf-8 -*-</span>
+ 
+<span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"input your name:"</span><span class="p">)</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"input your age:"</span><span class="p">)</span>
+<span class="n">job</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"input your job:"</span><span class="p">)</span>
+ 
+<span class="n">msg</span> <span class="o">=</span> <span class="s">'''
+Information of </span><span class="si">%</span><span class="s">s
+-------------
+Name: </span><span class="si">%</span><span class="s">s
+Age : </span><span class="si">%</span><span class="s">d
+Job : </span><span class="si">%</span><span class="s">s
+'''</span> <span class="o">%</span><span class="p">(</span><span class="n">name</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">age</span><span class="p">,</span><span class="n">job</span><span class="p">)</span>
+ 
+<span class="k">print</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</code></pre>
+</div>
+<p>这里的Age用%d进行格式化如果没有强制转换为数字则会报错,执行上面的代码则会报错,int()转换了则不会报错</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>input your name:tomcatxiao
+input your age:21
+input your job:IT
+Traceback (most recent call last):
+  File "/home/tomcat/PycharmProjects/s13/day01/dsfg.py", line 15, in &lt;module&gt;
+    ''' %(name,name,age,job)
+TypeError: %d format: a number is required, not str
+</code></pre>
+</div>
+
+<h4 id="注释">注释</h4>
+<p>’’#’‘号可以从一行的任何地方开始</p>
+
+<p>’’’’’’,’”””””“,三引号用于多行注释</p>
+
+<p>\,表示续行符</p>
+
+<p>注意：如果’’’’'’三引号是在一个def 函数或者class 定义类的下方则是对这个函数或者类的说明,可以通过_doc_动态获得文档子串</p>
+
+<h3 id="六模块初识">六、模块初识　　</h3>
+<p>Python的强大之处在于他有非常丰富和强大的标准库和第三方库，几乎你想实现的任何功能都有相应的Python库支持，以后的课程中会深入讲解常用到的各种库，现在，我们先来象征性的学2个简单的。</p>
+
+<p><strong>sys</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ vi d.py
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+  
+import sys
+  
+print(sys.argv)
+  
+  
+#输出
+tomcat@node:~$ python d.py helo world
+['test.py', 'helo', 'world']  #把执行脚本时传递的参数获取到了
+</code></pre>
+</div>
+
+<p><strong>os</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; import os
+&gt;&gt;&gt; os.system("df -h") #调用系统命令
+</code></pre>
+</div>
+
+<p>注意：os.system()执行系统命令,如果有变量存储该执行的结果,该变量只会存储该命令执行成功或者失败返回值,不会存储命令执行的结果,os.system(“df -h”)会有返回值</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; result = os.system("df -h")
+df: ‘/mnt/hgfs’: Protocol error
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           797M  9.4M  788M   2% /run
+/dev/sda1       189G   10G  170G   6% /
+tmpfs           3.9G   16M  3.9G   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+cgmfs           100K     0  100K   0% /run/cgmanager/fs
+tmpfs           797M   76K  797M   1% /run/user/1000
+ 
+&gt;&gt;&gt; print(result)
+256
+</code></pre>
+</div>
+
+<p>如果需要保存命令执行的结果需哟使用os.popen(“系统命令”).read(),然后使用变量赋值输出即可</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; result = os.popen("df -h").read()
+ 
+&gt;&gt;&gt; print(result)
+Filesystem      Size  Used Avail Use% Mounted on
+udev            3.9G     0  3.9G   0% /dev
+tmpfs           797M  9.4M  788M   2% /run
+/dev/sda1       189G   10G  170G   6% /
+tmpfs           3.9G   16M  3.9G   1% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           3.9G     0  3.9G   0% /sys/fs/cgroup
+cgmfs           100K     0  100K   0% /run/cgmanager/fs
+tmpfs           797M   76K  797M   1% /run/user/1000
+</code></pre>
+</div>
+<p><strong>sys与os结合使用</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ vi e.py
+#!/usr/bin/env python
+import os,sys
+ 
+os.system(''.join(sys.argv[1:]))
+ 
+# 执行
+tomcat@node:~$ python e.py df
+df: ‘/mnt/hgfs’: Protocol error
+Filesystem     1K-blocks     Used Available Use% Mounted on
+udev             4059116        0   4059116   0% /dev
+tmpfs             815812     9596    806216   2% /run
+/dev/sda1      198036724 10435852 177518160   6% /
+tmpfs            4079040    15996   4063044   1% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+tmpfs            4079040        0   4079040   0% /sys/fs/cgroup
+cgmfs                100        0       100   0% /run/cgmanager/fs
+tmpfs             815812       76    815736   1% /run/user/1000
+</code></pre>
+</div>
+<p><strong>自己写个补全模块tab.py适合python2.x,python3.5都有自带补全功能</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python </span>
+<span class="c"># python startup file </span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">readline</span>
+<span class="kn">import</span> <span class="nn">rlcompleter</span>
+<span class="kn">import</span> <span class="nn">atexit</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="c"># tab completion </span>
+<span class="n">readline</span><span class="o">.</span><span class="n">parse_and_bind</span><span class="p">(</span><span class="s">'tab: complete'</span><span class="p">)</span>
+<span class="c"># history file </span>
+<span class="n">histfile</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s">'HOME'</span><span class="p">],</span> <span class="s">'.pythonhistory'</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">readline</span><span class="o">.</span><span class="n">read_history_file</span><span class="p">(</span><span class="n">histfile</span><span class="p">)</span>
+<span class="k">except</span> <span class="nb">IOError</span><span class="p">:</span>
+    <span class="k">pass</span>
+<span class="n">atexit</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">readline</span><span class="o">.</span><span class="n">write_history_file</span><span class="p">,</span> <span class="n">histfile</span><span class="p">)</span>
+<span class="k">del</span> <span class="n">os</span><span class="p">,</span> <span class="n">histfile</span><span class="p">,</span> <span class="n">readline</span><span class="p">,</span> <span class="n">rlcompleter</span>
+</code></pre>
+</div>
+<p>写完后保存,导入就可以使用</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>tomcat@node:~$ python
+Python 2.7.11 (default, Jul 27 2016, 18:09:58) 
+[GCC 5.2.1 20151010] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+/&gt;&gt;&gt; import tab
+/&gt;&gt;&gt; import os
+/&gt;&gt;&gt; os.
+Display all 238 possibilities? (y or n)
+os.EX_CANTCREAT             os.fchdir(
+os.EX_CONFIG                os.fchmod(
+os.EX_DATAERR               os.fchown(
+os.EX_IOERR                 os.fdatasync(
+os.EX_NOHOST                os.fdopen(
+</code></pre>
+</div>
+
+<p>你会发现，上面自己写的tab.py模块只能在当前目录下导入，如果想在系统的何何一个地方都使用怎么办呢？ 此时你就要把这个tab.py放到python全局环境变量目录里啦，用sys.path可以查看,ubuntu是在/usr/lib/python2.7/dist-packages/,centos是在/usr/lib/python2.7/site-packages/</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; import sys
+&gt;&gt;&gt; sys.path
+['', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', 
+'/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/usr/local/lib/python2.7/dist-packages', 
+'/usr/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages/PILcompat', '/usr/lib/python2.7/dist-packages/gtk-2.0', 
+'/usr/lib/python2.7/dist-packages/ubuntu-kylin-sso-client', '/usr/lib/python2.7/dist-packages/ubuntu-sso-client']
+</code></pre>
+</div>
+
+<h3 id="七if语句与流程控制">七、If语句与流程控制</h3>
+<h4 id="python的比较操作">python的比较操作：</h4>
+
+<p><strong>所有的Python对象都支持比较操作：</strong></p>
+
+<ul>
+  <li>可用于测试值相等、相对大小等</li>
+  <li>如果是复合对象，python会检查其所有部分，包括自动遍历各级嵌套对象，知道可以得出最终结果</li>
+</ul>
+
+<p><strong>测试操作符：</strong></p>
+
+<ul>
+  <li>”==” 操作符测试值的相等性</li>
+  <li>“is” 表达式测试对象的一致性</li>
+  <li>“in” 成员关系测试</li>
+</ul>
+
+<h4 id="如何实现比较操作">如何实现比较操作：</h4>
+<p><strong>python中不同类型的比较方法：</strong></p>
+
+<ul>
+  <li>(1)数字：通过相对大小进行比较</li>
+  <li>(2)字符串：按照字典次序逐次进行比较</li>
+  <li>(3)列表和元组：自左至右比较各部分内容</li>
+  <li>
+    <p>(4)字典：对排序之后的(键、值)列表进行比较
+<strong>python中真和假的含义：</strong></p>
+  </li>
+  <li>(1)非0数字为真，否则为假</li>
+  <li>(2)非空对象为真，否则为假</li>
+  <li>(3)None则始终为假</li>
+</ul>
+
+<p>比较和相等测试会递归地应用于数据结构中
+返回值为True或False</p>
+
+<h4 id="组合条件测试">组合条件测试：</h4>
+
+<p>X and Y: 与运算
+X or Y: 或运算
+not X : 非运算</p>
+<h4 id="if测试的语法结构">if测试的语法结构：</h4>
+<blockquote>
+  <p>if boolean_expression1:
+    suite1
+elif boolean_expression2:
+    suite2
+else:
+    else_suite</p>
+</blockquote>
+
+<p>注意： 
+elif语句是可选的</p>
+
+<h4 id="ifelse三元表达式">if/else三元表达式：</h4>
+
+<p>通常在为某变量设定默认值时通常用到如下表达式</p>
+
+<blockquote>
+  <p>A = X if Y else Z</p>
+</blockquote>
+
+<p>或：</p>
+
+<blockquote>
+  <p>if Y:
+    A = X
+else
+    A = Z</p>
+</blockquote>
+
+<p>其通用条件表达式语法格式为：</p>
+
+<blockquote>
+  <p>expression1 if boolean_express else expression2</p>
+</blockquote>
+
+<p>如果boolean_express的值为True，则条件表达式的结果为express1,否则为express2</p>
+
+<h3 id="八循环forwhile">八、循环for,while</h3>
+<p>循环机制及应用场景
+while循环：</p>
+
+<ul>
+  <li>(1)用于编写通用迭代结构</li>
+  <li>(2)顶端测试为真即会执行循环体，并会重复多次测试知道为假后执行循环后的其他语句</li>
+</ul>
+
+<p>for循环：</p>
+
+<ul>
+  <li>(1)一个通用的序列迭代器，用于遍历任何有序的序列对象内的元素</li>
+  <li>(2)可用于字符串、元组、列表和其他的内置可迭代对象，以及通过类所创建的新对象</li>
+</ul>
+
+<p>python也提供了一些能够进行隐性迭代的工具：</p>
+
+<ul>
+  <li>(1)in成员关系测试</li>
+  <li>(2)列表解析</li>
+  <li>(3)map、reduce和filter函数</li>
+</ul>
+
+<p><strong>break</strong>: 跳出最内层的循环
+<strong>continue</strong>: 跳出所处的最近层循环的开始处
+<strong>pass</strong>: 占位语句</p>
+
+<p>外层变量，可以被内层代码使用
+内层变量，不应被外层代码使用</p>
+
+<h4 id="while循环">while循环：</h4>
+
+<p><strong>while True: 死循环</strong></p>
+
+<p>语法格式：</p>
+
+<blockquote>
+  <p>while boolean_express:
+    while_suite
+else:
+    else_suite</p>
+</blockquote>
+
+<p>注意：</p>
+
+<ul>
+  <li>else分支为可选部分</li>
+  <li>只要boolean_express的结果为True，循环就会执行</li>
+  <li>boolean_express的结果为False时终止循环，此时如果有else分支，则会执行</li>
+</ul>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>示例1：
+&gt;&gt;&gt; url = 'www.mageedu.com'
+&gt;&gt;&gt; while url:
+       print(url)
+       url = url[1:]
+
+示例2：
+&gt;&gt;&gt; x = 0;y = 100
+&gt;&gt;&gt; while x &lt; y:
+       print(x)
+       x += 1
+
+示例3：
+&gt;&gt;&gt; url = 'www.mageedu.com'
+&gt;&gt;&gt; while url:
+       print(url)
+       url = url[:-1]
+   else:
+       print('game over')
+</code></pre>
+</div>
+
+<p><strong>while大量练习:</strong></p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>练习1：逐一显示指定列表中的所有元素
+&gt;&gt;&gt; l1 = [1,2,3,4,5,6]
+&gt;&gt;&gt; count = 0
+&gt;&gt;&gt; while l1:
+     print(l1[0])
+     l1.pop(0)
+     
+
+&gt;&gt;&gt; l1 = [1,2,3,4,5,6]
+&gt;&gt;&gt; while l1:
+     print(l1[-1])
+     l1.pop()
+     
+   
+&gt;&gt;&gt; l1 = [1,2,3,4,5,6]
+&gt;&gt;&gt; count = 0
+&gt;&gt;&gt; while l1 &lt; len(l1):
+     print(l1[count])
+     count += 1
+ 
+
+练习2：求100以内所有偶数之和
+练习3：逐一显示指定字典的所有键；并于显示结束后说明总键数；
+&gt;&gt;&gt; d1 = {'x':1,'y':23,'z':78}
+&gt;&gt;&gt; keylists = d1.keys()
+&gt;&gt;&gt; while keylists:
+        print(keylists[0])
+        keylists.pop[0]
+    else:
+        print(len(d1))
+    
+    
+练习4：创建一个包含了100以内所有奇数的列表
+&gt;&gt;&gt; l1 = []
+&gt;&gt;&gt; x = 1
+&gt;&gt;&gt; while x &lt; 100:
+        l1.append(x)
+        x += 2
+
+
+练习5：逆序逐一显示一个列表的所有元素
+练习6：列表l1 = [0,1,2,3,4,5,6],列表l2 = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],以第一个列表中的元素为键，以第二个列表中的元素为值生成字典d1
+
+
+&gt;&gt;&gt; l1 = [0,1,2,3,4,5,6]
+&gt;&gt;&gt; l2 = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+&gt;&gt;&gt; d1 = {}
+&gt;&gt;&gt; count = 0
+&gt;&gt;&gt; if len(l1) == len(l2):
+    while count &lt; len(l1):
+        d1[l1[count]] = l2[count]
+        count += 1
+
+&gt;&gt;&gt; print(d1)
+</code></pre>
+</div>
+
+<h4 id="for循环">for循环：</h4>
+<p>for循环：</p>
+
+<p>语法格式：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>for expression1 in iterable:
+    for_suite
+else:
+    else_suite
+</code></pre>
+</div>
+<p>通常，expression或是一个单独的变量，或是一个变量序列，一般以元组的形式给出
+如果以元组或列表用于expression,则其中的每个数据项都会拆分到表达式的项</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>T = [(1,2),(3,4),(5,6),(7,8)]
+for (a,b) in T:
+　　print(a,b)
+</code></pre>
+</div>
+
+<p><strong>编写循环的技巧：</strong>
+(1)for循环比while循环执行速度快
+(2)python提供了两个内置函数，用于在for循环中定制特殊的循环python3.x 只有range,python2.x有(range,xrange)</p>
+
+<ul>
+  <li>range: 一次性地返回连续的整数列表</li>
+  <li>xrange: 一次产生一个数据元素，相较于range更节约空间</li>
+  <li>zip：返回并行的元素元组的列表，常用于在for循环中遍历数个序列</li>
+</ul>
+
+<p><strong>range()函数：</strong>非完备遍历
+用于每隔一定的个数元素挑选一个元素</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; S = 'How are you these days?'
+&gt;&gt;&gt; range(0,len(S),2)
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22]
+&gt;&gt;&gt; for i in range(0,len(S),2):
+       print(S[i])
+</code></pre>
+</div>
+<p>修改列表</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; L = [1,2,3,4,5]
+&gt;&gt;&gt; for i in range(len(L)):
+       L[i] += 1
+&gt;&gt;&gt; L
+</code></pre>
+</div>
+
+<p><strong>zip()函数：</strong>并行遍历
+取得一个或多个序列为参数，将给定序列中的并排的元素配成元组，返回这些元组的列表
+当参数长度不同时，zip会以最短序列的长度为准</p>
+
+<p>1.可在for循环中用于实现并行迭代</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; L1 = [1,2,3,4,5,6,7]
+&gt;&gt;&gt; L2 = ['a','b','c','d','e','f','g']
+&gt;&gt;&gt; zip(L1,L2)
+</code></pre>
+</div>
+
+<p>2.zip也常用于动态构造字典</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>&gt;&gt;&gt; keys = [1,2,3,4,5,6,7]
+&gt;&gt;&gt; vaules = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+&gt;&gt;&gt; D = {}
+&gt;&gt;&gt; for (k,v) in zip(keys,values)
+       D[k] = v
+&gt;&gt;&gt; D
+</code></pre>
+</div>
+<p>for大量练习:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>for循环练习：
+练习1：逐一分开显示指定字典d1中的所有元素，类似如下;
+    k1  v1
+    k2  v2
+
+&gt;&gt;&gt; d1 = {'x':123,'y':321,'z':734}
+&gt;&gt;&gt; for (k,v) in d1.items():
+    print(k,v)
+    
+y 321
+x 123
+z 734
+
+练习2：逐一显示列表中l1=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']中索引为奇数的元素;
+
+&gt;&gt;&gt; l1=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+
+&gt;&gt;&gt; for i in range(1,len(l1),2):
+    print(l1[i])
+
+练习3：将属于列表l1=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],但不属于列表l2=['Sun','Mon','Tue','Thu','Sat']的所有元素定义为一个新列表l3;
+
+&gt;&gt;&gt; l1=['Sun','Mon','Tue','Wed','Thu','Fri','Sat'] 
+&gt;&gt;&gt; l2=['Sun','Mon','Tue','Thu','Sat']
+&gt;&gt;&gt; l3 = []
+&gt;&gt;&gt; for i in l1:
+&gt;&gt;&gt;     if i not in l2:
+&gt;&gt;&gt;         l3.append(i)
+
+练习4：将属于列表namelist=['stu1','stu2','stu3','stu4','stu5','stu6','stu7'],删除列表removelist=['stu3','stu7','stu9'];请将属于removelist列表中的每个元素从namelist中移除(属于removelist,但不属于namelist的忽略即可)
+
+&gt;&gt;&gt; namelist=['stu1','stu2','stu3','stu4','stu5','stu6','stu7']
+&gt;&gt;&gt; removelist=['stu3','stu7','stu9']
+&gt;&gt;&gt; for i in removelist:
+&gt;&gt;&gt;     if i in namelist:
+&gt;&gt;&gt;         namelist.remove(i)
+&gt;&gt;&gt; print(namelist)
+</code></pre>
+</div>
+
+<p>场景一、用户登陆验证</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>复制代码
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+import getpass
+
+name = 'tom'
+pwd = 123456
+count = 0
+
+while True:
+    if count &lt; 3:
+        print("Please enter your name and password !")
+        username = input("username:")
+        password = getpass.getpass("password:")
+
+        if username == name and password == pwd:
+            print("恭喜你登陆成功！")
+            break
+        else:
+            print("登陆失败！用户名或者密码错误")
+    else:
+        print("你已经输错3次,正在退出....")
+        break
+
+    count += 1
+</code></pre>
+</div>
+
+<p>场景二、猜年龄游戏</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding:utf-8 -*-</span>
+
+<span class="n">age</span> <span class="o">=</span> <span class="mi">22</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">count</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s">"please input num:"</span><span class="p">))</span>
+        <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">age</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"恭喜你,答对了"</span><span class="p">)</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">age</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"你猜的数字大了"</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"你猜的数字小了"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">b</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"你太笨了,这都猜不对,你继续玩吗？(yes or not):"</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">b</span> <span class="o">==</span> <span class="s">'yes'</span><span class="p">:</span>
+            <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">continue</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">print</span><span class="p">(</span><span class="s">"Bye!下次再玩"</span><span class="p">)</span>
+
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre>
+</div>
+
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+            
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+    </div>
+    <div class="nex">
+
+        
+        <p><strong>下一篇</strong> <a href="/2017/08/25/%E5%BC%80%E5%8A%A8%E5%A4%A7%E8%84%91-%E4%B8%80%E4%B8%80%E4%BD%BF%E7%94%A8%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E8%BF%9B%E8%A1%8C%E5%BF%AB%E9%80%9F%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%98%85%E8%AF%BB%E7%9A%84%E6%96%B9%E6%B3%95MMOST-%E8%BD%AC/">开动大脑</a></p>
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             「数据和科学」 
+        </p>
+        <p class="contact">
+            Contact me at: 
+             
+            
+            
+            <a href="mailto:lzx704@126.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>  
+            
+             
+            
+             
+            
+             
+            
+              
+            
+             
+            
+            
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>
