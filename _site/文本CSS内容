@@ -14,7 +14,7 @@ A2A3A2
 链接后
 
 
-颜色
+* 颜色
 白色：#FEFFFE
 color: #3F403F;
 color: #FEFFFE;
@@ -68,5 +68,9 @@ _sass > _index.scss
 
 
 3 网站FOOT
+_footer.scss 是格式
+_includes > footer.html
+修改，多--
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js--"></script>
 
 
