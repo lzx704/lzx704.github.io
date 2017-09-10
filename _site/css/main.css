@@ -333,23 +333,23 @@ header {
           color: #9e9d9d; }
         .page .left ul li .categories a {
           padding: 0 5px;
-          background-color: #9e9d9d;
+          background-color: #a1a3a6;
           color: #fff;
           font-size: 90%;
           transition: 0.3s ease; }
           .page .left ul li .categories a:hover {
-            background-color: #b6b6b9; }
+            background-color: #70a19f; }
       .page .left ul li .pageTag i {
         color: #c6cbe9; }
       .page .left ul li .pageTag a {
         padding: 0 5px;
-        background-color: #c6cbe9;
+        background-color: #a1a3a6;
         border-radius: 4px;
         color: #fff;
         font-size: 90%;
         transition: 0.3s ease; }
         .page .left ul li .pageTag a:hover {
-          background-color: #c0ddc7; }
+          background-color: #70a19f; }
   .page .anchor {
     display: none; }
   .page .right {
@@ -792,7 +792,7 @@ pre {
     .page[index] .right .wrap .side .tags-cloud li {
       color: #FFFFFF; }
     .page[index] .right .wrap .side .tags-cloud a {
-      color: #000000;
+      color: #FFFFFF;
       padding: 0 3px;
       border-radius: 5px; }
       .page[index] .right .wrap .side .tags-cloud a:hover {
