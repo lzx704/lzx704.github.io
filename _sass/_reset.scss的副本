@@ -14,7 +14,6 @@ h6 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #939696;
 }
 h1,
 h2,
@@ -29,8 +28,8 @@ html {
 }
 body {
     font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
-    color: #3F403F;
-    background-color:#E7E8E7;
+    color: #333;
+    background-image: url(https://ooo.0o0.ooo/2016/06/20/5768c606cf9cb.jpg);
     position: relative;
     min-height: 100%;
     padding-bottom: 190px;

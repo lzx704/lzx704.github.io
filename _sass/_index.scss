@@ -1,9 +1,9 @@
 .page[index] {
     a {
-        color: #4d6dad;
+        color: #788796;
         transition: 0.5s ease;
         &:hover {
-            color: #223253;
+            color: #527096;
         }
     }
     .left {
@@ -93,6 +93,7 @@
                     li {
                         font-size: 14px;
                         a {
+                        		color:#788796;
                             display: block;
                             width: 100%;
                             padding: 2px 0;
@@ -144,29 +145,6 @@
                             background-color: #f0e7ce;
                         }
                     }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 770px) {
-    .page[index] {
-        .left>ul li {
-            h2 {
-                font-size: 22px;
-            }
-            .excerpt {
-                h2 {
-                    font-size: 20px;
-                }
-                h3 {
-                    font-size: 18px;
-                }
-                h4 {
-                    font-size: 16px;
-                }
-                li{
-                    margin: 0;
                 }
             }
         }

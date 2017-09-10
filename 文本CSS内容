@@ -1,0 +1,72 @@
+#BEBFBE
+
+背景
+#FEFFFE
+
+删掉，风格扁平化
+box-shadow: 0 0px 0px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+
+标题字体
+3F403F
+
+文字字体
+A2A3A2
+链接后
+
+
+颜色
+白色：#FEFFFE
+color: #3F403F;
+color: #FEFFFE;
+
+暗蓝:#527096
+安灰：
+color:#788796;
+
+
+# 变动的地方
+
+1 标题
+
+
+2 中间背景
+## 标题颜色
+* 取消正文阴影背景
+_page.scss
+
+删除
+.page {
+    .left {
+        box-shadow: 0 1px 2px rgba(0,0,0,0.4),0 0 30px rgba(10,10,0,0.1) inset;
+然后相应添加
+				background-color: #FEFFFE;
+
+
+* 取消大背景图
+_reset.scss
+删除
+body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
+    color: #333;
+    background-image: url(https://ooo.0o0.ooo/2016/06/20/5768c606cf9cb.jpg);
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 190px;
+}
+
+
+* Categories修改底下字体
+_sass > _index.scss 
+.page[index]
+	.right {
+		.right {
+        .wrap {
+            .side {
+                }
+                      # 添加  		color:#788796;
+
+
+
+3 网站FOOT
+
+

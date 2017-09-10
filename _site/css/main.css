@@ -16,7 +16,8 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #939696; }
 
 h1,
 h2,
@@ -31,8 +32,8 @@ html {
 
 body {
   font-family: 'Helvetica Neue',Helvetica,Arial,'Microsoft YaHei',sans-serif;
-  color: #333;
-  background-image: url(https://ooo.0o0.ooo/2016/06/20/5768c606cf9cb.jpg);
+  color: #3F403F;
+  background-color: #E7E8E7;
   position: relative;
   min-height: 100%;
   padding-bottom: 190px; }
@@ -299,8 +300,7 @@ header {
     padding: 20px 30px;
     line-height: 1.6;
     font-size: 16px;
-    background-color: #f8f8fd;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 0 30px rgba(10, 10, 0, 0.1) inset; }
+    background-color: #FEFFFE; }
     .page .left > h1 {
       margin-bottom: -10px; }
     .page .left a:not([title]) {
@@ -360,8 +360,7 @@ header {
       bottom: 190px; }
     .page .right .side {
       box-sizing: border-box;
-      background-color: #f8f8fd;
-      box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.3), 0 0 30px rgba(10, 10, 0, 0.1) inset;
+      background-color: #FEFFFE;
       padding-bottom: 1px;
       -ms-word-break: break-all;
       word-break: break-all;
@@ -679,10 +678,10 @@ pre {
     color: #a6e22e; }
 
 .page[index] a {
-  color: #4d6dad;
+  color: #788796;
   transition: 0.5s ease; }
   .page[index] a:hover {
-    color: #223253; }
+    color: #527096; }
 .page[index] .left > ul {
   padding: 0; }
   .page[index] .left > ul > li {
@@ -744,6 +743,7 @@ pre {
     .page[index] .right .wrap .side .content-ul[cate] li {
       font-size: 14px; }
       .page[index] .right .wrap .side .content-ul[cate] li a {
+        color: #788796;
         display: block;
         width: 100%;
         padding: 2px 0;
@@ -782,17 +782,6 @@ pre {
       .page[index] .right .wrap .side .tags-cloud a:hover {
         background-color: #f0e7ce; }
 
-@media screen and (max-width: 770px) {
-  .page[index] .left > ul li h2 {
-    font-size: 22px; }
-  .page[index] .left > ul li .excerpt h2 {
-    font-size: 20px; }
-  .page[index] .left > ul li .excerpt h3 {
-    font-size: 18px; }
-  .page[index] .left > ul li .excerpt h4 {
-    font-size: 16px; }
-  .page[index] .left > ul li .excerpt li {
-    margin: 0; } }
 .page[demo] .left {
   width: 100%; }
   .page[demo] .left a {
