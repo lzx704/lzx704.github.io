@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 Sep 2017 13:53:14 +0800</pubDate>
-    <lastBuildDate>Mon, 11 Sep 2017 13:53:14 +0800</lastBuildDate>
+    <pubDate>Tue, 12 Sep 2017 20:44:45 +0800</pubDate>
+    <lastBuildDate>Tue, 12 Sep 2017 20:44:45 +0800</lastBuildDate>
     <generator>Jekyll v3.5.2</generator>
     
       <item>
@@ -66,16 +66,7 @@
     
       <item>
         <title>编程小白第一本PYTHON入门书阅读笔记</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#编程小白第一本python入门书阅读笔记&quot; id=&quot;markdown-toc-编程小白第一本python入门书阅读笔记&quot;&gt;编程小白第一本PYTHON入门书阅读笔记&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;编程小白第一本python入门书阅读笔记&quot;&gt;编程小白第一本PYTHON入门书阅读笔记&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  这是一本比较初级的入门Python学习材料，面向零基础的同学，主要梳理出了关键的知识点，让人高效地学习。
-&lt;/blockquote&gt;
-
+        <description>
 </description>
         <pubDate>Tue, 11 Apr 2017 12:00:00 +0800</pubDate>
         <link>http://localhost:4000/2017/04/11/%E7%BC%96%E7%A8%8B%E5%B0%8F%E7%99%BD%E7%AC%AC%E4%B8%80%E6%9C%ACPYTHON%E5%85%A5%E9%97%A8%E4%B9%A6%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
