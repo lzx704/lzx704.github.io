@@ -15,7 +15,7 @@ author: cm
 
 
 ### 1 Table family：
-有相关关联关系的一组表，如客户表（customers），订单表（order），订单明细表（LineItems）。这些表之间往往有外键约束关系，可以通过如下2中方式建立table family：
+有相关关联关系的一组表，如客户表（customers），订单表（order），订单明细表（LineItems）。这些表之间往往有外键约束关系，可以通过如下2种方式建立table family：
 
 1.1 通过CONSTRAINT [FK_name] FOREIGN KEY (FK_column) REFERENCES \[R_table_name]([R_table_column]) **——这种关系可以有级联关系。**
 
@@ -128,6 +128,7 @@ SQL> CREATE SHARDED TABLE LineItems
 
 ### 3 chunk：
 A chunk contains a single partition from each table of a table family. This guarantees that related data from different sharded tables can be moved together.
+
 chunk的概念和table family密不可分。因为family之间的各个表都是有关系的，我们把某个table family的一组分区称作一个chunk。如
 customers表中的1号～100万号客户信息在一个分区中；在order表中，也有1号～100万号的客户的order信息，也在一个分区中；另外LineItems表中的1号～100万号客户的明细信息，也在一个分区中，我们希望这些相关的分区，都是在一个shard node中，避免cross shard join。所以，我们把这些在同一个table family内，相关的分区叫做chunk。在进行re-sharding的时候，是以chunk为单位进行移动。因此可以避免cross shard join。
 ![](https://www.oracleblog.org/wp-content/uploads/2016/05/chunk.png)
