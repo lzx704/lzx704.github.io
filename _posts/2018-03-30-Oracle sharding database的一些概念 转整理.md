@@ -12,6 +12,9 @@ author: cm
 {:toc}
 
 
+
+
+
 ### 1 Table family：
 有相关关联关系的一组表，如客户表（customers），订单表（order），订单明细表（LineItems）。这些表之间往往有外键约束关系，可以通过如下2中方式建立table family：
 
