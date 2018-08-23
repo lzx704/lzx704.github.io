@@ -131,6 +131,7 @@ A chunk contains a single partition from each table of a table family. This guar
 
 chunk的概念和table family密不可分。因为family之间的各个表都是有关系的，我们把某个table family的一组分区称作一个chunk。如
 customers表中的1号～100万号客户信息在一个分区中；在order表中，也有1号～100万号的客户的order信息，也在一个分区中；另外LineItems表中的1号～100万号客户的明细信息，也在一个分区中，我们希望这些相关的分区，都是在一个shard node中，避免cross shard join。所以，我们把这些在同一个table family内，相关的分区叫做chunk。在进行re-sharding的时候，是以chunk为单位进行移动。因此可以避免cross shard join。
+
 ![](https://www.oracleblog.org/wp-content/uploads/2016/05/chunk.png)
 
 另外，虽然我们设计了chunk来避免cross shard join，但是在做查询的时候，还是有可能会查到非table family进行cross shard join，这在设计之初，就应该避免的。如果有cross shard，还不如用duplicated table。
